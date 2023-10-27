@@ -51,16 +51,16 @@ function Todolist() {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full h-[100vh]">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-back my-4">
+        <h1 className="text-[#9acd32] text-[50px] font-extrabold">
           TodoList Progress
         </h1>
         <div className="max-w-md mx-auto mt-10 bg-white p-6 rounded shadow-lg">
           <div className="mb-4">
             <div className="flex items-center">
               <input
-                className="background text-white w-full py-2 px-3 border border-gray-300 rounded"
+                className="text-black w-full py-2 px-3 border border-gray-300 rounded"
                 placeholder="Enter Your Todo Here"
                 type="text"
                 value={editData.id === null ? data : editData.item}

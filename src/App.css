@@ -6,33 +6,88 @@
   height: 40vmin;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.background {
+  background-image: linear-gradient(
+    240deg,
+    hsl(4deg 90% 58%) 0%,
+    hsl(15deg 72% 55%) 9%,
+    hsl(27deg 55% 51%) 17%,
+    hsl(42deg 44% 47%) 26%,
+    hsl(69deg 37% 45%) 35%,
+    hsl(103deg 37% 48%) 44%,
+    hsl(121deg 34% 50%) 53%,
+    hsl(118deg 27% 50%) 63%,
+    hsl(116deg 20% 51%) 72%,
+    hsl(115deg 13% 51%) 81%,
+    hsl(113deg 7% 50%) 91%,
+    hsl(0deg 0% 50%) 100%
+  );
+}
+.bg-img {
+  background-image: linear-gradient(
+    240deg,
+    hsl(207deg 90% 54%) 0%,
+    hsl(234deg 45% 66%) 9%,
+    hsl(298deg 22% 59%) 17%,
+    hsl(342deg 43% 61%) 26%,
+    hsl(356deg 64% 62%) 35%,
+    hsl(3deg 82% 60%) 44%,
+    hsl(10deg 80% 57%) 53%,
+    hsl(21deg 63% 53%) 63%,
+    hsl(33deg 49% 49%) 72%,
+    hsl(53deg 39% 45%) 81%,
+    hsl(86deg 37% 47%) 91%,
+    hsl(122deg 39% 49%) 100%
+  );
+}
+.back{
+  background-image: linear-gradient(
+  240deg,
+  hsl(122deg 39% 49%) 0%,
+  hsl(139deg 34% 50%) 9%,
+  hsl(161deg 31% 50%) 17%,
+  hsl(186deg 33% 50%) 26%,
+  hsl(201deg 52% 54%) 35%,
+  hsl(206deg 76% 56%) 44%,
+  hsl(218deg 68% 63%) 53%,
+  hsl(261deg 31% 63%) 63%,
+  hsl(328deg 32% 60%) 72%,
+  hsl(351deg 54% 62%) 81%,
+  hsl(0deg 73% 62%) 91%,
+  hsl(4deg 90% 58%) 100%
+);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button {
+  position: relative;
+  border: none;
+  background-color: #4CAF50;
+  border-radius: 3px;
+  padding: 13px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 150%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 1s
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
 }

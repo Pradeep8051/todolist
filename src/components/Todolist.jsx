@@ -71,7 +71,7 @@ function Todolist() {
                 }}
               />
               <button
-                className="ml-2 py-2 px-3 bg-green-500 text-white rounded cursor-pointer"
+                className="ml-2 py-3 px-3 bg-green-500 text-white rounded cursor-pointer"
                 onClick={() => {
                   editData.id === null ? submit() : update(editData.id);
                 }}

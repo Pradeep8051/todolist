@@ -53,7 +53,7 @@ function Todolist() {
   return (
     <div className="w-full h-[100vh]">
       <div className="text-center">
-        <h1 className="text-[#9acd32] text-[50px] font-extrabold">
+        <h1 className="text-white text-[50px] font-extrabold">
           TodoList Progress
         </h1>
         <div className="max-w-md mx-auto mt-10 bg-white p-6 rounded shadow-lg">
